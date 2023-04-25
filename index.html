@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Básico</title>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        section{
+            text-align: center;
+        }
+        p{
+            font-size: 100px;
+        }
+        .but{
+            font-size: 30px;
+            margin: 4px 2px;
+            width: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Contador de incrementos</h1>
+        <p id="numb"></p>
+        <button class="but" onclick="more()">+</button>
+        <button class="but" onclick="less()">-</button>
+    </section>
+
+    <script>
+
+        let numero = 0 
+        function more(){
+            numero ++
+            show()
+        }
+        function less(){
+            numero -= 1
+            show()
+        }
+        function show(){
+            const p = document.getElementById("numb")
+            p.innerText = numero
+        }
+
+        show();
+    
+    
+    </script>
+</body>
+</html>
