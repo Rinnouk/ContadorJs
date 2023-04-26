@@ -10,6 +10,7 @@
         *{
             margin: 0;
             box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
         body{
             min-height: 100vh;
@@ -28,33 +29,40 @@
             
         }
         p{
-            margin-top: 5vh;
-            font-size: 100px;
+            margin-top: 2vh;
+            font-size: 120px;
             
         }
         .but{
             
            
             font-size: 30px;
-            margin: 4vh 2px;
+            margin: 2vh 6px;
+            padding-left: 15PX;
+            padding-right: 15PX;
             //width: 70px;
             background-color: rgb(204, 219, 235);
             border-radius: 8px;
             box-shadow:  0 3px 10px 0 rgba(0,0,0,0.3);;
         }
         #menos{
-            padding: 3px 8px;
+            padding: 3px 18px;
+        }
+        h1{
+            font-size: 25px;
+            
+
         }
     </style>
 </head>
 <body>
     <section>
-        <h1>Contador de incrementos</h1>
+        <h1>CONTADOR DE INCREMENTOS</h1>
         <p id="numb"></p>
-        <button class="but" onclick="zerar()">zerar</button>
+        <button class="but" onclick="zerar()">Zerar</button>
         <button class="but" onclick="more()">+</button>
         <button class="but" id = "menos" onclick="less()">-</button>
-        <button class="but" onclick="dobrar()">double!</button>
+        <button class="but" onclick="dobrar()">Double!</button>
         
         
     </section>
